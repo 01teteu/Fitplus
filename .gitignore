@@ -1,7 +1,9 @@
 node_modules
 .env
-prisma
-/src/generated/prisma
-docker-compose.yml
-package-lock.json
-package.json
+src/generated/prisma
+
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
