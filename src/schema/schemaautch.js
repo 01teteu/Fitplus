@@ -1,4 +1,4 @@
-import { z } from 'zod'
+import { email, string, z } from 'zod'
 
 export const schemaAutch = z.object({
   nome: z.string(),
@@ -13,3 +13,10 @@ export const schemaAutch = z.object({
   message: "As senhas não coincidem",
   path: ["confirmarSenha"],
     })})
+export const schemaLogin = z.object({
+  email: z.
+  string()
+  .email(),
+  senha: z.
+  string()
+})
